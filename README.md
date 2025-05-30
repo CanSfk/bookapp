@@ -33,6 +33,9 @@ This project is a simple book tracking application that allows users to manage t
 
    Using npm:
    npm install
+   npm run dev
 
    Or using yarn:
    yarn install
+   yarn dev
+   ```
