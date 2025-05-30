@@ -14,6 +14,7 @@
     --white: #ffffff;
     --off-white: #F6F8FA;
     --silver-mist: #D5D9E3;
+    --silver-light: #EEF0F4;
 
     --color-primary: var(--purple);
     --color-primary-dark: var(--purple-dark);
@@ -35,6 +36,9 @@
     --color-background-alt: var(--off-white);
 
     --color-border: var(--silver-mist);
+
+    --color-hover-mist: var(--silver-mist);
+    --color-hover-silver: var(--silver-light);
 
     --font-family-inter: "Inter", sans-serif;
     --font-family-futura-pt: "Futura-Pt", sans-serif;

@@ -4,10 +4,15 @@ import Footer from './Footer.vue'
 import HeaderDesktop from './HeaderDesktop.vue'
 import HeaderMobile from './HeaderMobile.vue'
 import Sidebar from './Sidebar.vue'
+
+// Modals
+import Modal from '../modals/Modal.vue'
 </script>
 
 <template>
   <Sidebar />
+
+  <Modal />
 
   <div class="layout">
     <HeaderDesktop />

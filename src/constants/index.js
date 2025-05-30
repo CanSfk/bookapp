@@ -21,3 +21,9 @@ export const footerLinks = [
     ],
   },
 ]
+
+export const readingStatus = [
+  { label: 'To Read', value: 1 },
+  { label: 'Reading', value: 2 },
+  { label: 'Completed', value: 3 },
+]

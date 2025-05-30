@@ -7,7 +7,8 @@ DONE: Route yapısı oluşturulacak.
 DONE: Layout yapısı oluşturulacak.
 DONE: Layout yapısı mobil uyumlu yapılacak.
 
+DONE: Modal yapisi olusturuldu.
 TODO: Mobile menu yapilacak.
-TODO: Geriye kalan ui bilesenleri olusturulacak.
+DONE: Geriye kalan ui bilesenleri olusturulacak.
 TODO: Books sayfasi olusturulacak.
 TODO: Api ornegi olusturulacak.
