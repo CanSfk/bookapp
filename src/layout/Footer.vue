@@ -118,7 +118,7 @@ footer {
 }
 
 .link:visited {
-  /* color: var(--color-primary); */
+  color: var(--color-primary);
 }
 
 .social-list {
