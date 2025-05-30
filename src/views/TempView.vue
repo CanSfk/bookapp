@@ -6,7 +6,6 @@
 
 <style scoped>
 div {
-  height: 100vh;
   display: grid;
   place-items: center;
 }
