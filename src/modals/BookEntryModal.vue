@@ -2,6 +2,7 @@
 import { reactive } from 'vue'
 // Store
 import { useBookStore } from '../stores/books'
+import { useModalStore } from '../stores/modal'
 // Components
 import Wrapper from '../components/modal/Wrapper.vue'
 import { TextInput, SelectBox, Button } from '../components/ui'
@@ -9,6 +10,7 @@ import { TextInput, SelectBox, Button } from '../components/ui'
 import { readingStatus } from '../constants'
 
 const bookStore = useBookStore()
+const modalStore = useModalStore()
 
 const formData = reactive({
   bookTitle: '',
@@ -20,6 +22,7 @@ const formData = reactive({
 
 const onSubmit = () => {
   bookStore.addBook(formData)
+  modalStore.closeModal()
 }
 </script>
 
