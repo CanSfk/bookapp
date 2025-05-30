@@ -56,7 +56,7 @@ const handleClick = (item) => {
 <style scoped>
 .select {
   position: relative;
-  min-width: 200px;
+  width: 200px;
   font-family: var(--font-family-roboto);
   color: var(--color-text-muted);
   z-index: 10;

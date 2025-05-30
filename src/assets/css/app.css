@@ -111,7 +111,7 @@ body {
     width: 100%;
     font-family: var(--font-family-inter);
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--color-background);
@@ -163,13 +163,26 @@ table {
 .container-xl {
     width: 100%;
     max-width: 1920px;
-    padding-inline: 114px;
 }
 
 .container-lg {
     width: 100%;
     max-width: 1360px;
+    margin-inline: auto;
+}
+
+.section-xl {
+    padding-inline: 114px;
+}
+
+.section-lg {
     padding-inline: 24px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--black)
 }
 
 
@@ -177,19 +190,23 @@ table {
    MEDIA
 \*------------------*/
 @media (max-width: 1536px) {
-    .container-xl {
+    .section-xl {
         padding-inline: 78px;
     }
 }
 
 @media (max-width: 1280px) {
-    .container-xl {
-        padding-inline: 48px;
+    .section-xl {
+        padding-inline: 24px;
     }
 }
 
 @media (max-width: 768px) {
-    .container-xl {
+    .section-xl {
+        padding-inline: 12px;
+    }
+
+    .section-lg {
         padding-inline: 12px;
     }
 }

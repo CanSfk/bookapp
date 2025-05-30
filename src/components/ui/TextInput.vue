@@ -1,9 +1,16 @@
 <script setup>
 const model = defineModel()
+
+defineProps({
+  type: {
+    type: String,
+    default: 'text',
+  },
+})
 </script>
 
 <template>
-  <input type="text" v-model="model" />
+  <input :type="type" v-model="model" />
 </template>
 
 <style scoped>

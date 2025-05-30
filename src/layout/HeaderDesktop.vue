@@ -1,27 +1,35 @@
 <script setup>
+// Store
+import { useModalStore } from '../stores/modal'
 // Components
 import { DesktopNavLink, Logo } from '../components/layout'
 import { Button } from '../components/ui'
+
+const modal = useModalStore()
 </script>
 
 <template>
-  <header class="header container-xl">
-    <nav class="nav">
-      <Logo />
+  <div class="container-xl">
+    <header class="header section-xl">
+      <nav class="nav">
+        <Logo />
 
-      <div class="nav-link-list">
-        <DesktopNavLink title="About" to="/about" />
+        <div class="nav-link-list">
+          <DesktopNavLink title="About" to="/about" />
 
-        <DesktopNavLink title="Books" to="/" />
+          <DesktopNavLink title="Books" to="/" />
+        </div>
+      </nav>
+
+      <div class="btn-group">
+        <Button is-outline size="lg" @click="modal.openModal('book-entry-modal')"
+          >Add book form</Button
+        >
+
+        <Button size="lg">Login</Button>
       </div>
-    </nav>
-
-    <div class="btn-group">
-      <Button is-outline size="lg">Add book form</Button>
-
-      <Button size="lg">Login</Button>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>
 
 <style scoped>

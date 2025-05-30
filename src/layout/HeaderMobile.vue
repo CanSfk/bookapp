@@ -12,14 +12,14 @@ import { useLayoutStore } from '../stores/layout'
 const layout = useLayoutStore()
 
 const handleClick = () => {
-  console.log('clicked')
-  layout.toggleSidebar()
+  //   console.log('clicked')
+  //   layout.toggleSidebar()
 }
 </script>
 
 <template>
   <header class="header container-xl">
-    <nav class="nav">
+    <nav class="nav section-xl">
       <Logo />
 
       <IconButton aria-label="menu button" @click="handleClick">

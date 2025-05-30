@@ -10,8 +10,8 @@ import { IconFacebook, IconYoutube, IconInstagram } from '../components/icons'
 </script>
 
 <template>
-  <footer>
-    <div class="footer-wrapper container-xl">
+  <footer class="container-xl">
+    <div class="footer-wrapper section-xl">
       <div class="content">
         <Logo title="Bookshop" />
 

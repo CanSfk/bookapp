@@ -18,9 +18,9 @@ import Modal from '../modals/Modal.vue'
     <HeaderDesktop />
     <HeaderMobile />
 
-    <div class="wrapper">
+    <main class="wrapper container-lg">
       <slot />
-    </div>
+    </main>
 
     <Footer />
   </div>

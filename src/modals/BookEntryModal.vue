@@ -1,22 +1,25 @@
 <script setup>
-// Components
 import { reactive } from 'vue'
+// Store
+import { useBookStore } from '../stores/books'
+// Components
 import Wrapper from '../components/modal/Wrapper.vue'
 import { TextInput, SelectBox, Button } from '../components/ui'
-
 // Constants
 import { readingStatus } from '../constants'
+
+const bookStore = useBookStore()
 
 const formData = reactive({
   bookTitle: '',
   author: '',
-  totalNumberOfPage: 0,
+  totalNumberOfPage: '',
   readingStatus: 0,
-  numberOfPagesRead: 0,
+  numberOfPagesRead: '',
 })
 
 const onSubmit = () => {
-  console.log(formData)
+  bookStore.addBook(formData)
 }
 </script>
 
@@ -28,9 +31,13 @@ const onSubmit = () => {
 
         <form @submit.prevent="onSubmit">
           <div class="form-group">
-            <TextInput placeholder="Book title" v-model="formData.bookTitle" />
+            <TextInput placeholder="Book title" v-model="formData.bookTitle" required />
             <TextInput placeholder="Author" v-model="formData.author" />
-            <TextInput placeholder="Total number of pages" v-model="formData.totalNumberOfPage" />
+            <TextInput
+              type="number"
+              placeholder="Total number of pages"
+              v-model="formData.totalNumberOfPage"
+            />
 
             <SelectBox
               title="Reading status"
@@ -39,10 +46,14 @@ const onSubmit = () => {
               v-model="formData.readingStatus"
             />
 
-            <TextInput placeholder="Number of pages read" v-model="formData.numberOfPagesRead" />
+            <TextInput
+              type="number"
+              placeholder="Number of pages read"
+              v-model="formData.numberOfPagesRead"
+            />
           </div>
 
-          <Button>Add Book</Button>
+          <Button size="lg">Add Book</Button>
         </form>
       </div>
     </template>

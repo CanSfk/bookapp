@@ -27,6 +27,11 @@ const classes = computed(() => ({
   place-items: center;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .btn.border {
   border: 1px solid var(--color-border);
 }
