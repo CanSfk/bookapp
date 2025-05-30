@@ -117,6 +117,10 @@ const readingProgress = computed(() => {
   flex: 1 1 0%;
 }
 
+.card.horizontal .info {
+  margin-top: 0;
+}
+
 .card-header {
   position: relative;
 }
