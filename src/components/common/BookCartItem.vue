@@ -46,7 +46,13 @@ const readingProgress = computed(() => {
 <template>
   <div :class="['card', isHorizontal ? 'horizontal' : '']">
     <div class="card-header">
-      <img :src="`/public/images/${book.img}`" alt="book image" class="img" />
+      <img
+        :src="`/images/${book.img}`"
+        alt="book image"
+        class="img"
+        loading="lazy"
+        decoding="async"
+      />
 
       <button
         :class="['btn-like', book.isFavori ? 'active' : '']"
